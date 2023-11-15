@@ -14,7 +14,6 @@ export SDL_VIDEODRIVER=dummy
 export DOOMWADDIR=$PWD/extract
 
 $SOURCE_PORT -iwad miniwad.wad \
-             -mb 24 \
              -nodraw -noblit -nosound -noautoload -nogui -nograbmouse \
              -statdump $tmp/statdump.txt \
              "$@" >$tmp/log.txt 2>&1 || true
